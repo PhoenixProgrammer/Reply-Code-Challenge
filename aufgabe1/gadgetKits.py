@@ -25,13 +25,10 @@ def parse_testcases(io):
 # Function to solve a single test case
 def solve_testcase(t):
     # Get data from the test case
-    (a, b) = t
-
-    # Evaluate the solution
-    solution = a+b
+    print(t)
     
     # Returning the solution
-    return solution
+    return 0
 
 # Solve 
 def solve(input, output):
@@ -39,7 +36,7 @@ def solve(input, output):
     for i, t in enumerate(parse_testcases(input)):
         # Print the solution of the test case
         # print(f"Case #{i+1}:", solve_testcase(t), file=output)
-        print(f"Case #{i+1}:", 10, file=output)
+        print(f"Case #{i+1}:", solve_testcase(t), file=output)
 
 current_dir = dirname(__file__)
 
